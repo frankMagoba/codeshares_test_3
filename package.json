@@ -1,16 +1,20 @@
 {
-  "name": "3",
-  "version": "0.0.0",
-  "private": true,
+  "name": "codeshares_test_3",
+  "version": "1.0.0",
+  "description": "Albums list and and apis",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "npm run test"
   },
+  "keywords": [
+    "code",
+    "shares",
+    "lin",
+    "test"
+  ],
+  "author": "lin",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "express": "^4.17.1"
   }
 }
