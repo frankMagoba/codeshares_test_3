@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Last FM</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <h1 data-position="header">List of albums</h1>
+
+    <section data-position="add-album">
+      <h2>Add album</h2>
+
+      <form action="/albums" method="POST">
+        <input type="text" placeholder="name" name="name" />
+        <input type="text" placeholder="album" name="album" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section data-position="update-album">
+      <div>
+        <h2>Darth Vadar invades!</h2>
+        <p>
+          Replace first Yoda's album with a album written by Darth Vadar
+        </p>
+        <button id="update-button">Replace Yoda's album</button>
+      </div>
+    </section>
+
+    <section data-position="delete-album">
+      <div>
+        <h2>Remove Darth Vadar!</h2>
+        <p>
+          Delete one Darth Vadar's album. Does nothing if there are no more
+          Darth Vadar's album
+        </p>
+        <button id="delete-button">Delete Darth Vadar's album</button>
+      </div>
+      <div id="message"></div>
+    </section>
+
+    <section data-position="albums">
+      <h2>albums</h2>
+
+      <ul class="albums">
+        <% for(var i = 0; i < albums.length; i++) {%>
+        <li class="album">
+          <span><%= albums[i].name %></span>:
+          <span><%= albums[i].album %></span>
+        </li>
+        <% } %>
+      </ul>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
