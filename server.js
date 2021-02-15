@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser= require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 
-const connectionString = "mongodb+srv://lin:icui4cu2@cluster0.eq9ns.mongodb.net/albums?retryWrites=true&w=majority"
+const connectionString = "mongodb+srv://icui4cu2:icui4cu2@smartloan.xfuxu.mongodb.net/albums?retryWrites=true&w=majority"
 
 const app = express();
 
